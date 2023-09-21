@@ -11,7 +11,7 @@
     >
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -26,12 +26,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="@string/hello"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_click_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -39,5 +39,29 @@
         android:text="@string/click_me"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_click_one"
+        app:layout_constraintVertical_bias="0.158">
+
+        <Button
+            android:id="@+id/button_click_two"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:text="Button2" />
+
+        <Button
+            android:id="@+id/button_click_three"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="Button3" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
