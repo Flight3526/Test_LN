@@ -45,4 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button v = (Button)view;
         v.setText("已点击");
     }
+
+    public void MyXMLClick(View view){
+        Button v = (Button)view;
+        v.setText("Set in XML");
+    }
 }
